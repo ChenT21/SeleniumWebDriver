@@ -26,9 +26,6 @@ private WebDriver driver;
 		Thread.sleep(3000);
 		gp.typeOnSearchBar("Wikipedia");
 		Thread.sleep(1000);
-		//busqueda google
-		//gp.clickResult();
-		//gp.printText();
 		
 		gp.clickResultById(1);
 		//gp.printTitle();
