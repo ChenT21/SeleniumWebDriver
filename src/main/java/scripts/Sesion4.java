@@ -28,26 +28,14 @@ public class Sesion4 {
 			Thread.sleep(3000);
 			gp.typeOnSearchBar("test automation practice");
 			gp.clickResultById(0);
-			/*Aceptar
-			tap.clickAlertButton();
-			Thread.sleep(1000);
-			tap.acceptAlert();
-			tap.printText();*/
-
 			
-			/*Cancelar
-			Thread.sleep(1000);
-			tap.clickAlertButton();
-			Thread.sleep(1000);
-			tap.cancelAlert();
-			tap.printText();*/
-			
+			//Seleccion por Valor
 			String value = tap.selectCheckBoxByValue("3");
 			System.out.println(value);
-			//
+			//Seleeccion por texto
 			String value1 = tap.selectCheckBoxByText("Slow");
 			System.out.println(value1);
-			//
+			//Seleccion por indice
 			String value2 = tap.selectCheckBoxByIndex(1);
 			System.out.println(value2);
 			
