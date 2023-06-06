@@ -25,9 +25,9 @@ public class Sesion4 {
 			driver.get("https:/www.google.com");
 			GooglePage gp = new GooglePage(driver);
 			TAP tap = new TAP(driver);
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			gp.typeOnSearchBar("test automation practice");
-			gp.clickResultById(0);
+			gp.clickResultById(1);
 			
 			//Seleccion por Valor
 			String value = tap.selectCheckBoxByValue("3");
@@ -44,7 +44,7 @@ public class Sesion4 {
 		@After
 		public void teardown() {
 			
-			//driver.quit();
+			driver.quit();
 		}
 
 }

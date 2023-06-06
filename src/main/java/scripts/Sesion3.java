@@ -27,7 +27,7 @@ private WebDriver driver;
 		TAP tap = new TAP(driver);
 		Thread.sleep(3000);
 		gp.typeOnSearchBar("test automation practice");
-		gp.clickResultById(0);
+		gp.clickResultById(1);
 		//Aceptar
 		tap.clickAlertButton();
 		Thread.sleep(1000);
@@ -46,7 +46,7 @@ private WebDriver driver;
 	@After
 	public void teardown() {
 		
-		//driver.quit();
+		driver.quit();
 	}
 
 }
